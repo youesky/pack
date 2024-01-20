@@ -8,7 +8,7 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Sᴄᴇɴᴇᴘᴀᴄᴋ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅ
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
 
     ABOUT_TXT = """<b>✯ Mʏ ɴᴀᴍᴇ: {}
-✯ Dᴇᴠᴇʟᴏᴩᴇʀ:</b> <a herf=https://t.me/ebiza>ᴇʙɪᴢᴀ</a>
+✯ Dᴇᴠᴇʟᴏᴩᴇʀ:</b> <a herf=https://t.me/ebiza>EBIZA</a>
 <b>✯ Cᴏᴅᴇᴅ Oɴ: ᴩʏᴛʜᴏɴ/ᴩʏʀᴏɢʀᴀᴍ
 ✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: ᴍᴏɴɢᴏ-ᴅʙ
 ✯ Mʏ Sᴇʀᴠᴇʀ: ᴀɴʏᴡʜᴇʀᴇ
@@ -17,7 +17,7 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Sᴄᴇɴᴇᴘᴀᴄᴋ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅ
     SOURCE_TXT = """<b>NOTE:</b>
 - ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<a href=https://github.com/MrMKN/PROFESSOR-BOT>𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑-𝐁𝐎𝐓</a>
 
-<b>ᴅᴇᴠ:</b> <a herf=https://t.me/ebiza>ᴇʙɪᴢᴀ</a>"""
+<b>ᴅᴇᴠ:</b> <a herf=https://t.me/ebiza>EBIZA</a>"""
 
     FILE_TXT = """<b>➤ Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>
 

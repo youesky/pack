@@ -227,7 +227,7 @@ Wᴇʟᴄᴏᴍᴇ ᴛᴏ {chat}.
 📆 Yᴇᴀʀ: <a href={url}/releaseinfo>{year}</a>
 🌟 Rᴀᴛɪɴɢ: <a href={url}/ratings>{rating}</a>/10"""
     
-    HOW_TO_DOWNLOAD = """<b><a href='https://t.me/ScenepackUpdates/48'>Wᴀᴛᴄʜ Tʜɪs Tᴜᴛᴏʀɪᴀʟ</a></b>"""
+    HOW_TO_DOWNLOAD = "https://t.me/ScenepackUpdates/48"
    
   
  

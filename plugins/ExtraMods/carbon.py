@@ -31,7 +31,7 @@ async def carbon_func(b, message):
     await message.reply_photo(
         photo=carbon,
         caption="**ᴍᴀᴅᴇ ʙʏ: @ebiza**",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ꜱᴜᴩᴩᴏʀᴛ ᴜꜱ", url="https://t.me/ScenepackOfficial")]]),                   
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ꜱᴜᴩᴩᴏʀᴛ ᴜꜱ", url="https://t.me/ScenepackSupport")]]),                   
     )
     await m.delete()
     carbon.close()

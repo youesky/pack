@@ -55,7 +55,8 @@ async def song(client, message):
             title=title,
             duration=dur,
             performer=performer,
-            thumb=thumb_name
+            thumb=thumb_name,
+            reply_to_message_id=message.id
         )            
         await m.delete()
     except Exception as e:

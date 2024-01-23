@@ -18,7 +18,7 @@ async def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = await message.reply(f"**ѕєαrchíng чσur ѕσng...!\n {query}**")
+    m = await message.reply(f"**ѕєαrchíng чσur ѕσng...!\n{query}**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -43,7 +43,7 @@ async def song(client, message):
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
 
-        cap = "**@SᴄᴇɴᴇᴘᴀᴄᴋBᴏᴛ | [ᴇʙɪᴢᴀ](https://t.me/ebiza)**"
+        cap = "**[@SᴄᴇɴᴇᴘᴀᴄᴋBᴏᴛ](https://t.me/ScenepackBot) | [ᴇʙɪᴢᴀ](https://t.me/ebiza)**"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)

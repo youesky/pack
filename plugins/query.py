@@ -495,7 +495,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« Bᴀᴄᴋ', 'help')           
         ]]
         if query.from_user.id not in ADMINS:
-            return await query.answer("Sᴏʀʀʏ Tʜɪs Mᴇɴᴜ Oɴʟʏ Fᴏʀ Mʏ Sᴄᴇɴᴇᴘᴀᴄᴋ Uᴘʟᴏᴀᴅᴇʀs 📤", show_alert=True)
+            return await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.NO_SUDO_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
         await query.message.edit("Pʀᴏᴄᴇꜱꜱɪɴɢ Wᴀɪᴛ Fᴏʀ 5 ꜱᴇᴄ...")
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.SUDO_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
         

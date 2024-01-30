@@ -434,14 +434,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
             InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 🔈", url="https://t.me/ScenepackSupport")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
+            InlineKeyboardButton("Hᴇʟᴩ 🫂", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=client.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
        
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('‎⚙️ Aᴅᴍɪɴ Pᴀɴᴇʟ ⚙️', 'admin')            
+            InlineKeyboardButton('⚙️ Aᴅᴍɪɴ Pᴀɴᴇʟ ⚙️', 'admin')            
+            ],[
+            InlineKeyboardButton('Uᴘʟᴏᴀᴅ Sᴄᴇɴᴇᴘᴀᴄᴋ 📤', 'sudo_users')
             ],[
             InlineKeyboardButton('Fɪʟᴛᴇʀꜱ', 'openfilter'),
             InlineKeyboardButton('Cᴏɴɴᴇᴄᴛ', 'coct')
@@ -486,6 +488,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         stats = script.SERVER_STATS.format(get_time(time.time() - client.uptime), psutil.cpu_percent(), psutil.virtual_memory().percent, humanbytes(total), humanbytes(used), psutil.disk_usage('/').percent, humanbytes(free))            
         stats_pic = await make_carbon(stats, True)
         await query.edit_message_media(InputMediaPhoto(stats_pic, script.ADMIN_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+    
+    elif query.data == "sudo_users":
+        buttons = [[
+            InlineKeyboardButton('✘ Cʟᴏꜱᴇ', 'close_data'),
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'help')           
+        ]]
+        if query.from_user.id not in ADMINS:
+            return await query.answer("Sᴏʀʀʏ Tʜɪs Mᴇɴᴜ Oɴʟʏ Fᴏʀ Mʏ Sᴄᴇɴᴇᴘᴀᴄᴋ Uᴘʟᴏᴀᴅᴇʀs 📤", show_alert=True)
+        await query.message.edit("Pʀᴏᴄᴇꜱꜱɪɴɢ Wᴀɪᴛ Fᴏʀ 5 ꜱᴇᴄ...")
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.SUDO_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons)))
         
     elif query.data == "openfilter":
         buttons = [[

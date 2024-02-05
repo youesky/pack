@@ -13,10 +13,10 @@ marshmallow==3.20.1
 umongo==3.1.0
 motor==3.0.0
 
-#---ytdl----#
+#---ytdl---- 2023.07.06#
 youtube-search-python
 youtube-search
-yt-dlp==2023.07.06
+yt-dlp==2023.10.07
 
 #---imdb---#
 cinemagoer==2023.5.1
